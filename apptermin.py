@@ -134,8 +134,8 @@ def book_appointment():
             time.sleep(1)  # Wait for dropdown to open
             
             # Select the option
-            if not select_dropdown_option(driver, wait, "1 Person und 2 Familienangehörige"):
-                raise Exception("Could not select '1 Person und 2 Familienangehörige'")
+            if not select_dropdown_option(driver, wait, "1 Person"):
+                raise Exception("Could not select '1 Person'")
             
         except Exception as e:
             print(f"Error with dropdown interaction: {str(e)}")
